@@ -1,0 +1,19 @@
+group 'ko.roman'
+version '1.0-SNAPSHOT'
+apply plugin: 'java'
+apply plugin: 'application'
+
+archivesBaseName = "friend-letter"
+version = '1.0'
+mainClassName = "App"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.sparkjava/spark-template-velocity
+    compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
+    compile group: 'com.sparkjava', name: 'spark-template-velocity', version: '2.5.5'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}

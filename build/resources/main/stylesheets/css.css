@@ -1,0 +1,139 @@
+ @font-face {font-family: typo;src: url(../font/TypoGraphica_demo.otf);}
+ @font-face {font-family: cowboy;src: url(../font/CowboysD.otf);}
+ @font-face {font-family: cowboy;src: url(../font/CowboysD.otf);}
+ @font-face {font-family: mikoda;src: url(../font/MikodacsPCS.otf.otf);}
+ @font-face {font-family: museosans;src: url(../font/MuseoSansCyrl.otf);}
+ @font-face {font-family: museosans2;src: url(../font/MuseoSansCyrl_3.otf.otf);}
+ @font-face {font-family: oswald;src: url(../font/Oswald-Regular.otf);}
+ @font-face {font-family: fty;src: url(../font/FTYKRADJHUWNNCV.ttf);}
+ @font-face {font-family: helvetica;src: url(../font/9202.otf);}
+
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+	
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки #85402e */
+}
+body {
+	background: #2e1064  center center no-repeat;background-size: cover;
+	color: #303233;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: museosans2;
+	
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #e6618c;
+	text-decoration: underline;
+}
+a:hover {
+	color: #fdf208;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+header {background: #5f5a98 center no-repeat;background-size: cover;color: #fff;text-align: center;padding: 30px 10px 40px 10px;}
+header h1{font-size:3.25em;font-family:helvetica;margin-bottom:30px;}
+header h3{font-size:1.925em;margin-bottom:40px;font-family:sans-serif;font-style:italic;}
+.register{ display:table; padding:4px; margin: 0 auto;}
+.register input[type="submit"]{border-top:2px solid #a3ceda;cursor: pointer;border-left:2px solid #a3ceda;
+border-right:2px solid #4f6267;	border-bottom:2px solid #4f6267;padding:10px 20px !important;
+font-size:1.5em;background-color:#e0a81e;font-weight:bold;color:white;}
+.article {  display: inline-block;float: left;}
+section {color: #fff;text-align: center;}
+article {padding: 30px 10px 40px 10px;
+	
+	color: #989dcd;}
+.column {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 300px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+   }
+article div{float:  left; display: inline-block; text-align: left;}
+article span{}
+article h1{font-size:1.37em;font-weight:bold;margin-bottom:30px;}
+article p{font-size:1.2em;margin-bottom:30px;}
+
+/* --------------- /базовые настройки ---------*/
